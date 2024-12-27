@@ -1,5 +1,5 @@
-FROM ubuntu
+FROM alpine
 
 # Install texlive and emacs
-RUN apt-get update && apt-get install -y emacs texlive
+RUN apk add emacs texlive texlive-lualatex 
 
