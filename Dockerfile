@@ -1,5 +1,5 @@
-FROM alpine
+FROM miktex/miktex
 
-RUN apk add emacs-x11 texlive texlive-luatex font-jetbrains-mono font-inter font-eb-garamond
+RUN apt-get install emacs fonts-jetbrains-mono fonts-ebgaramond fonts-inter-variable
 
 ENTRYPOINT ["/bin/sh"]
